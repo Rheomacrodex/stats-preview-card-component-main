@@ -1,0 +1,58 @@
+body{
+  background-color: hsl(233, 47%, 7%);
+}
+header{
+  height: 10vw;
+}
+.h1{
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter";
+  font-weight: 700;
+}
+p{
+  color:hsla(0, 0%, 100%, 0.75);
+  font-family: "Inter";
+  font-weight: 400;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+
+}
+.stats{
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter";
+  font-weight: 700;
+}
+.statsHeading{
+  color:hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#imageDesktop{
+ background-image: url('image-header-desktop.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+
+
+}
+#imageDesktop:before{
+  background-color: hsla(277, 64%, 61%, 0.6);
+  content:'';
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+@media only screen and (max-width:992px){
+#imageDesktop{
+  height: 200px;
+}
+.row{
+  flex-direction: column-reverse;
+}
+  }
